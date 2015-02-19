@@ -7,6 +7,7 @@ my_loc="$(cd "$(dirname $0)" && pwd)"
 xhost +
 sudo docker run \
   -h client \
+  --privileged \
   -ti \
   -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v ${my_loc}/workspace:/home/ros/workspace ekumen/rocon-web-proxy \
