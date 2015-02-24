@@ -18,4 +18,4 @@
 # Stacks necessary for the rocon remocon (actually just need messages, but other qt apps in rocon_qt_guis have dependencies)
 {'git': {'local-name': 'rocon_multimaster', 'version': 'indigo', 'uri': 'https://github.com/robotics-in-concert/rocon_multimaster.git'}},
 {'git': {'local-name': 'rocon_qt_gui', 'version': 'indigo', 'uri': 'https://github.com/robotics-in-concert/rocon_qt_gui.git'}},
-
+]
