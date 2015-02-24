@@ -8,8 +8,8 @@ xhost +
 sudo docker run \
   -h server \
   --privileged \
+  -p 9090:9090 \
   -ti \
   -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v ${my_loc}/workspace:/home/ros/workspace ekumen/rocon-web-proxy \
-  -p 9090:9090 \
   /bin/bash -c "tmux"
